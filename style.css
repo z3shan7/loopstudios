@@ -55,11 +55,13 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+}
+.anchor-links{
+    
 }
 
-
 .anchor-links .nav-links{
+    position: relative;
     text-decoration: none;
     font-family: var(--ff-alata);
     color: #fff;
@@ -67,20 +69,20 @@ nav{
     margin: 0 13px;
     font-size: 14px;
 }
-.anchor-links .nav-links::after{
+.anchor-links  .nav-links::before{
     content: '';
     width: 0;
     height: 3px;
     background-color: #fff;
     position: absolute;
-    top: 130px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 30px;
+    left: 0;
     transition: all 300ms ease-in;
     
 }
-.anchor-links .nav-links:hover::after{
-    width: 100px;
+.anchor-links  a:hover::before{
+    width: 50px;
+
 
 }
 
